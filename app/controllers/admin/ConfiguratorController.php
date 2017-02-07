@@ -186,7 +186,8 @@ class ConfiguratorController extends BaseController
 
       $contents ="Director {\n";
 
-      $model = Cfgdirector::find(1);
+      #$model = Cfgdirector::find(1);
+      $model = CfgDirector::find(1);
       $model = $model->toArray();
 
       foreach( $model as $key => $value){
